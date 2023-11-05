@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="css/reset.css"> 
+     <!-- Used the lightbox shown in class -->
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel = "stylesheet" href="css/style.css">
     <title>Travel</title>
     </head>
@@ -24,8 +26,14 @@
     <div>
            <h2 class="recipes_h2"> Mexico City, Mexico</h2>
     <div class = "two_pictures_travel">
-    <img class="gif" src="images/zocalo_mexico_city.gif" alt="Zocalo">
+        <a href = "images/zocalo_mexico_city.gif" target="_blank" data-lightbox="Zocalo" data-title="Zocalo picture"
+        data-alt="Zocalo gif">
+            <img class="gif" src="images/zocalo_mexico_city.gif" alt="Zocalo">
+        </a>
+        <a href = "images/palacio_de_bellas_artes.jpg" target="_blank" data-lightbox="Bellas Artes" data-title="Bellas Artes picture"
+        data-alt="Bellas Artes non-gif">
     <img class="item2_gif" src="images/palacio_de_bellas_artes.jpg" alt="Bellas Artes">
+        </a>
     </div>
     </div>
     <br>
@@ -343,5 +351,14 @@ Cuauhtémoc, Mexico City. </p>
             </div>
             <!-- anthony7506 -->
         </main>
+        
     </body>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'maxWidth': 200,
+            // 'wrapAround': true
+        })
+    </script>
 </html>

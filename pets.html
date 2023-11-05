@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="css/reset.css"> 
+         <!-- Used the lightbox shown in class -->
+         <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel = "stylesheet" href="css/style.css">
     <title>Pets</title>
 </head>
@@ -28,7 +30,9 @@
                     <p>MiaoMiao is the best cat in the world, extremely social with other, and vigilant against strangers. Oftentimes you can find her running around the house looking for things to eat. If she consumed anything other than cat food, she immediately throws up. </p>
                     <p>She is chill and chirpy. Loves to play with anything other than professional cat toys. Also loves sitting on keyboards and joining Zoom calls.</p>
                 </div>
+                <a class="item2_3_tablet" href = "images/MiaoMiao.png" target="_blank" data-lightbox="MiaoMiao Picture" data-title="A picture of MiaoMiao resting on her divine throne." data-alt="MiaoMiao Picture">
                 <img class="item2_3_tablet" src="images/MiaoMiao.png" alt="A picture of MiaoMiao resting on her divine throne." title="MiaoMiao Picture" >
+                </a>
                 <div class="item3_3_tablet">
                     <h3>Likes</h3>
                     <ol>
@@ -59,7 +63,9 @@
                         With the ability to love beyond his small body, Yugi is an attached lap dog that loves to be your sidekick. Protective, caring, and cuddly, there is never a time he isn’t there to support you and is always prepared for a short-notice nap time.
                     </p>
                 </div>
+                <a class="item2_3_tablet" href = "images/yugi_sleepa.jpg" target="_blank" data-lightbox="Yugi Picture" data-title="Tan chihuahua sleeping on a black pillow" data-alt="Yugi Picture">
                 <img class="item2_3_tablet" src = "images/yugi_sleepa.jpg" alt = "Tan chihuahua sleeping on a black pillow" width="400">
+                </a>    
                 <div class="item3_3_tablet">
                     <h3>Likes</h3>
                     <ul class="unordered_list">
@@ -86,7 +92,9 @@
                     <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
                     <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
                 </div>
-                <img class="item2_3_tablet" src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
+                <a class="item2_3_tablet" href = "images/bacon.jpg" target="_blank" data-lightbox="Bacon Picture" data-title="Brown labradoodle wearing colorful lei" data-alt="Bacon Picture">
+                <img class="item2_3_tablet" src="images/bacon.jpg"  alt="Brown labradoodle wearing colorful lei">
+                </a>
                 <div class="item3_3_tablet">
                     <h3>Likes</h3>
                     <ul class="unordered_list">
@@ -166,7 +174,7 @@
             </div>
             <h3>Photo Gallery</h3> 
             <div class="pets_tablet">
-            <img class="pets_1_tablet" src="images/jingle_outside.jpg" alt="A close-up picture of Jingle’s face outside." width="200">
+            <img class="pets_1_tablet" src="images/jingle_outside.jpg" alt="A close-up picture of Jingle's face outside." width="200">
             <img class="pets_2_tablet" src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden." width="200">
             <img class="pets_3_tablet" src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
             <img  class="pets_4_tablet" src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
@@ -174,7 +182,16 @@
             <!--Lynn Sabieddine -->
 
         </div>
+
     </main>
     
 </body>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'maxWidth': 200,
+        // 'wrapAround': true
+    })
+</script>
 </html>

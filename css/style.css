@@ -337,3 +337,15 @@ nav{
 .recipes_h2{
     background-color: #ff0000;
 }
+header img{
+    width: 50%;
+    margin-top: 20vh;
+}
+.lb-data .lb-details{
+    margin-top: 10vh;
+}
+
+.lb-data .lb-caption{
+    font-size: 2vh;
+    color:black;
+}
