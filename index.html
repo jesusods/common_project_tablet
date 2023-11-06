@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href="css/style.css">
     <title>Travel</title>
     </head>
-    <body>
+    <body >
         <header>
             <h1>Travel</h1>
         </header>
@@ -22,7 +22,14 @@
             </ul>
 
         </nav>
+        <div class="buttons">
+        <button class="button" onclick = "renderAll_travel()">All </button>
+        <button class="button" onclick = "northAmerica()">North America </button>
+        <button class="button" onclick = "europe()">Europe </button>
+        <button class="button" onclick = "asia()">Asia </button>
+        </div>
     <main id ="main">
+    <div class = "north_america">
     <div>
            <h2 class="recipes_h2"> Mexico City, Mexico</h2>
     <div class = "two_pictures_travel">
@@ -89,8 +96,9 @@ Cuauhtémoc, Mexico City. </p>
 </div>
 </div>
 </div>
+    </div>
     <!-- <p>Jesus Delgado</p> -->
-<div>
+<div class = "europe">
     <h2 class="recipes_h2">Barcelona</h2>
     <div class = "two_pictures_travel">
     <img class="item2_gif" src="./images/Barcelona_non_gif.jpg" alt = "Arial view of beach">
@@ -151,7 +159,7 @@ Cuauhtémoc, Mexico City. </p>
 </div>
     <!--Kathryn Alcalde-->
 </div>
-        <div>
+<div class = "europe">
             <h2 class="recipes_h2">Zermatt, Switzerland</h2>
                 <div class="two_pictures_travel">
                     <img class = "gif" src="images/Zermatt_skier.gif" alt="Europe" width="400" height="500">
@@ -206,7 +214,7 @@ Cuauhtémoc, Mexico City. </p>
                 <!-- Maya Rosenthal -->
             </div>
         </div>
-        <div>
+        <div class = "asia">
             <h2 class="recipes_h2">  Nanjing Fuzi-Qinhuai </h2>
             <div class = "two_pictures_travel">
             <img class="gif" src="images/nanjing.gif" width = 400 alt = "qinhuai river git at night"> 
@@ -251,7 +259,7 @@ Cuauhtémoc, Mexico City. </p>
         </div>
         </div>
     </div>
-        <div>
+    <div class = "europe">
             <h2 class="recipes_h2">Prague</h2>
             <img src="images/praguecity.jpeg" alt ="Prague, Capital of the Czech Republic" width="400">
 
@@ -296,6 +304,7 @@ Cuauhtémoc, Mexico City. </p>
             </div>
 <!-- Emy Klepacki -->
         </div>
+        <div class = "europe">
             <h2 class="recipes_h2">Paris, France</h2>
             <div class = "two_pictures_travel">
             <img class = "gif" id="paris_La_Tour_Eiffel" src="images/paris_La_Tour_Eiffel.gif" alt="The Eiffel Tower with color" width="400">
@@ -349,6 +358,7 @@ Cuauhtémoc, Mexico City. </p>
                 </div>
             </div>
             </div>
+        </div>
             <!-- anthony7506 -->
         </main>
         
@@ -361,4 +371,8 @@ Cuauhtémoc, Mexico City. </p>
             // 'wrapAround': true
         })
     </script>
+        <script src="js/jsTablet.js"></script>
+        <script>
+            renderAll_travel()
+        </script>
 </html>

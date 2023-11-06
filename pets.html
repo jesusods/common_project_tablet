@@ -22,8 +22,13 @@
         </ul>
 
     </nav>
+    <div class="buttons_2">
+        <button class="button" onclick = "renderAll_pets()">All </button>
+        <button class="button" onclick = "dogs()"> Dogs </button>
+        <button class="button" onclick = "cats()">Cats </button>
+        </div>
     <main id ="main">
-        <div>
+        <div class="cat">
             <h2 class="recipes_h2">MiaoMiao</h2>
             <div class="three_pictures_tablet">
                 <div class="item1_3_tablet">
@@ -52,7 +57,7 @@
             </div>
             <!--Kevin Wang, Zachary Abdirahman-->
         </div>
-        <div>
+        <div class="dog">
             <h2 class="recipes_h2">Yugi</h2>
             <div class="three_pictures_tablet">
                 <div class="item1_3_tablet">
@@ -85,7 +90,7 @@
             <!-- Aileen Gonzalez -->
 
         </div>
-        <div>
+        <div class="dog">
             <h2 class="recipes_h2">Bacon Q Dog</h2>
             <div class="three_pictures_tablet">
                 <div class="item1_3_tablet">
@@ -117,14 +122,16 @@
             <!-- Colleen van Lent -->
         
         </div>
-        <div>
+        <div class="dog">
             <h2 class="recipes_h2">Honey</h2>
             <div class="three_pictures_tablet">
                 <div class="item1_3_tablet">
                     <p>Honeys favorite thing in the world is swimming. Even if it is the middle of January and half of the lake is frozen, Honey will be in the water. She is a smart swimmer, so when my brother and I go underwater, she will follow our air bubbles and be waiting for us when we come up for air.</p>
             <p>While most dogs like to chase balls or sticks, Honey likes to chase rocks. She will even chase rocks into the water and stick her whole face in the water to try and find the rock thrown. Chasing rocks is her main form of exercise right now as she refuses to go on walks from our house. If we drive her to another spot and walk from there, Honey will go on a walk but she refuses to leave our driveway when we try to walk from home. Finally one other Honey-ism is that her safe place is bathtubs. Many times our family has woken up in the middle of the night and found Honey is a bathtub</p>
                 </div>
+                <a class="item2_3_tablet" href = "images/honey_main.jpeg" target="_blank" data-lightbox="Honey Picture" data-title="Honey is a medium-sized golden retriever with honey brown fur." data-alt="Honey Picture">
                 <img class="item2_3_tablet" src="images/honey_main.jpeg" alt="Honey is a medium-sized golden retriever with honey brown fur.">
+                </a>
                 <div class="item3_3_tablet">
                     <h3>Likes</h3>
                     <ul class="unordered_list">
@@ -143,7 +150,7 @@
             </div>
             <!-- Abbie Tooman -->
         </div>
-        <div>
+        <div class="cat">
             <h2 class="recipes_h2">Jingle</h2>
             <div class="three_pictures_tablet">
                 <div class="item1_3_tablet">
@@ -162,7 +169,9 @@
                         four
                         days. Finally, he came back home one day with his tail bleeding and ripped out.</p>
                 </div>
+                <a class="item2_3_tablet" href = "images/jingle.jpg" target="_blank" data-lightbox="Jingle Picture" data-title="Picture of Jingle" data-alt="Jingle Picture">
                 <img  class="item2_3_tablet" src="images/jingle.jpg" alt="Picture of Jingle" >
+            </a>
                 <div class="item3_3_tablet">
                     <h3>Likes</h3>
                     <ul class="unordered_list">
@@ -193,5 +202,10 @@
         'maxWidth': 200,
         // 'wrapAround': true
     })
+</script>
+</script>
+<script src="js/jsTablet.js"></script>
+<script>
+    renderAll_pets()
 </script>
 </html>

@@ -349,3 +349,33 @@ header img{
     font-size: 2vh;
     color:black;
 }
+.north_america{
+display: none;
+}
+.europe{
+    display: none;
+}
+.asia{
+    display: none;
+}
+.dog{
+    display: none;
+    }
+.cat{
+    display: none;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 5vh;
+}
+.buttons_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 5vh;
+}
+.button{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+}
